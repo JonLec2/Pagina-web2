@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="robot.png" alt="Logo de la empresa">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#practicas">Prácticas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="telematica">
+            <h2>Sistemas Telemáticos</h2>
+            <p>Los sistemas telemáticos integran tecnologías de telecomunicaciones e informática para la transmisión y procesamiento de datos a distancia. Permiten la comunicación entre dispositivos y personas en diferentes ubicaciones geográficas.</p>
+            <p>Estos sistemas son fundamentales en áreas como telecomunicaciones, informática, automatización industrial, medicina, transporte, entre otros.</p>
+            <img src="./images.jpg" alt="Vista previa del proyecto">
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="project"  onclick="toggleContenido3()" >
+                <h3>Sensor de Humedad</h3>
+                <div class="image-preview"  id="3">
+                    <img src="./4img.jpeg"  >
+                    <img src="./2img.jpeg" >
+                </div>
+                
+            </div>
+            <div class="project" onclick="toggleContenido2()" >
+                <h3>Pantalla LCD</h3>
+                <div class="image-preview" id="2">
+                    <img src="./3img.jpeg" >
+                </div>
+            </div>
+            <div class="project"   onclick="toggleContenido()">
+                <h3>Lancha con arduino</h3>
+                <div class="image-preview"  id="1">
+                    <p>Digrama</p>
+                    <img src="./img11.jpeg" >
+                    <p>Ejemplo</p>
+                    <img src="./img12.jpeg" >
+                    <p>Codigo</p>
+                    <img src="./carbon2.png" >
+                </div>
+            </div>
+        </section>
+        <section id="practicas">
+            <h2>Prácticas</h2>
+            <div class="project">
+                <h3>Detector de Luz</h3>
+                <div class="image-preview">
+                    <img src="./1img.jpeg" >
+                    <img src="./img14.jpeg" >
+                </div>
+            </div>
+            <div class="project">
+                <h3>Programacion en Karel</h3>
+                <div class="image-preview">
+                    <img src="./img13.jpeg" >
+                </div>
+            </div>
+            <div class="project">
+                <h3>Uso del circuito Integrado</h3>
+                <div class="image-preview">
+                    <img src="./5img.jpeg" >
+                    <img src="./9img.jpeg" >
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Giroscopio</h3>
+                <div class="image-preview">
+                    <img src="./img15.jpeg" >
+                 
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <section id="Codigos">
+        <h2>Codigos de arduino</h2>
+        <div class="project">
+            <h3>Codigo 1 </h3>
+            <div class="image-code">
+                <img src="./carbon1.png" >
+            </div>
+        </div>
+  
+    </section>
+
+
+    <section id="Redes">
+        <h2>Redes Telematicas</h2>
+        <div class="project1">
+            <h3>Codigo 1 </h3>
+            <div class="image-code">
+                <img src="./sist.jpg" >
+                <p>Una Red Informática está formada por un conjunto de ordenadores y dispositivos conectados entre
+                    sí con la finalidad de compartir información (datos, imágenes, documentos…) y recursos
+                    (impresoras, discos duros…). Una conexión en red puede estar formada sólo por dos ordenadores o
+                    adquirir gran complejidad si se conectan a ella miles de dispositivos en todo el mundo, como ocurre
+                    en Internet.
+                    La Red Telemática se encarga de la transmisión de datos entre sistemas de información basados en
+                    ordenadores. En la telemática hay aspectos de las telecomunicaciones y aspectos de la informática.
+                    Las telecomunicaciones se encargan de la transmisión de la información y la informática del
+                    tratamiento de la misma.
+                    </p>
+            </div>
+            <iframe src="PDF1.pdf" width="80%" height="600px"></iframe>
+
+        </div>
+  
+    </section>
+
+
+
+
+
+    </main>
+
+    <script>
+        function toggleContenido() {
+          var contenido = document.getElementById("1");
+          if (contenido.style.display === "none") {
+            contenido.style.display = "block";
+          } else {
+            contenido.style.display = "none";
+          }
+        }
+        </script>
+
+<script>
+    // Ocultar contenido al cargar la página
+    document.addEventListener("DOMContentLoaded", function() {
+      var contenido = document.getElementById("1");
+      contenido.style.display = "none";
+    });
+    </script>
+
+<script>
+    function toggleContenido2() {
+      var contenido = document.getElementById("2");
+      if (contenido.style.display === "none") {
+        contenido.style.display = "block";
+      } else {
+        contenido.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+// Ocultar contenido al cargar la página
+document.addEventListener("DOMContentLoaded", function() {
+  var contenido = document.getElementById("2");
+  contenido.style.display = "none";
+});
+</script>
+
+
+<script>
+    function toggleContenido3() {
+      var contenido = document.getElementById("3");
+      if (contenido.style.display === "none") {
+        contenido.style.display = "block";
+      } else {
+        contenido.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+// Ocultar contenido al cargar la página
+document.addEventListener("DOMContentLoaded", function() {
+  var contenido = document.getElementById("3");
+  contenido.style.display = "none";
+});
+</script>
+
+</body>
+</html>
